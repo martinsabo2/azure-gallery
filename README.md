@@ -16,7 +16,7 @@ Create a resource group for the VM:
 az vm create \
   --resource-group $vm_source_rg \
   --name ubuntu-source-vm \
-  --image Ubuntu2404 \
+  --image "canonical:0001-com-ubuntu-minimal-jammy:minimal-22_04-lts-gen2:latest" \
   --admin-username azureuser \
   --generate-ssh-keys \
   --size Standard_B1s
