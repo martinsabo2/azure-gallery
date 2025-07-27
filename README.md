@@ -6,8 +6,8 @@ First, create an Ubuntu VM.
 
 `az login`
 
-vm_source_rg="ubuntu-source-vm"
-location="uksouth"
+`vm_source_rg="ubuntu-source-vm"`
+`location="uksouth"`
 
 Create a resource group for the VM:
 `az group create --name $vm_source_rg --location $location`
