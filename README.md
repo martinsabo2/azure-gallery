@@ -60,3 +60,19 @@ az vm create \
   --security-type "TrustedLaunch" \
   --size Standard_B1s
   ```
+After registering standard security type, this worked:
+```
+az feature register \
+  --namespace Microsoft.Compute \
+  --name UseStandardSecurityType
+```
+```
+az vm create \
+  --resource-group $vm_source_rg \
+  --name ubuntu-source-vm \
+  --image Ubuntu2204 \
+  --admin-username azureuser \
+  --generate-ssh-keys \
+  --security-type "Standard" \
+  --size Standard_B1s
+```
