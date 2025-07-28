@@ -30,4 +30,4 @@ Deallocate the VM:
 `az vm deallocate --resource-group <rg> --name <vm-name>`
 
 Generalize the VM:
-az vm generalize --resource-group <rg> --name <vm-name>
+`az vm generalize --resource-group <rg> --name <vm-name>`
