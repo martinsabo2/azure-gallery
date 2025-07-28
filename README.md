@@ -41,3 +41,10 @@ az image create \
   --source <vm-name> \
   --os-type Linux
 ```
+Create a Shared Image Gallery:
+```bash
+az sig create \
+  --resource-group <rg> \
+  --gallery-name myGallery \
+  --location <region>
+```
