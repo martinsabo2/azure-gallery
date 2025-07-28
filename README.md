@@ -48,3 +48,15 @@ az sig create \
   --gallery-name myGallery \
   --location <region>
 ```
+Log:
+This worked:
+```
+az vm create \
+  --resource-group $vm_source_rg \
+  --name ubuntu-source-vm \
+  --image Ubuntu2204 \
+  --admin-username azureuser \
+  --generate-ssh-keys \
+  --security-type "TrustedLaunch" \
+  --size Standard_B1s
+  ```
