@@ -31,3 +31,12 @@ Deallocate the VM:
 
 Generalize the VM:
 `az vm generalize --resource-group <rg> --name <vm-name>`
+
+Create a Managed Image from the VM:
+```bash
+az image create \
+  --resource-group <rg> \
+  --name myUbuntuImage \
+  --source <vm-name> \
+  --os-type Linux
+```
