@@ -22,7 +22,8 @@ az vm create \
   --size Standard_B1s
 ```
 Log into the machine and run:
+
 `sudo waagent -deprovision+user`
-`sudo shutdown -h now`
+and shutdown the VM.
 
 
