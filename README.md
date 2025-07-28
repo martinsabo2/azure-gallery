@@ -21,4 +21,8 @@ az vm create \
   --generate-ssh-keys \
   --size Standard_B1s
 ```
+Log into the machine and run:
+`sudo waagent -deprovision+user`
+`sudo shutdown -h now`
+
 
