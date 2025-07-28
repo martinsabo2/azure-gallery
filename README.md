@@ -26,4 +26,8 @@ Log into the machine and run:
 `sudo waagent -deprovision+user`
 and shutdown the VM.
 
+Deallocate the VM: 
+`az vm deallocate --resource-group <rg> --name <vm-name>`
 
+Generalize the VM:
+az vm generalize --resource-group <rg> --name <vm-name>
