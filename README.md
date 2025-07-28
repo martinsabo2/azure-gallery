@@ -76,3 +76,14 @@ az vm create \
   --security-type "Standard" \
   --size Standard_B1s
 ```
+this worked as well:
+```
+az vm create \
+  --resource-group $vm_source_rg \
+  --name ubuntu-source-vm \
+  --image "canonical:0001-com-ubuntu-minimal-jammy:minimal-22_04-lts-gen2:latest" \
+  --admin-username azureuser \
+  --generate-ssh-keys \
+  --security-type "Standard" \
+  --size Standard_B1s
+```
