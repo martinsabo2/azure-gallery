@@ -33,6 +33,7 @@ Generalize the VM:
 `az vm generalize --resource-group <rg> --name <vm-name>`
 
 Create a Managed Image from the VM:
+- warning: Creation of managed images are not supported for virtual machine with TrustedLaunch security type.
 ```bash
 az image create \
   --resource-group <rg> \
